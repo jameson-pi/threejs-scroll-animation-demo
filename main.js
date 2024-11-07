@@ -1,14 +1,7 @@
 import './style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-const moonI = new Image();
-moonI.src="https://jameson-pi.github.io/threejs-scroll-animation-demo/moon.jpg"
-const jeffI = new Image();
-moonI.src="https://jameson-pi.github.io/threejs-scroll-animation-demo/jeff.png"
-const normalI = new Image();
-moonI.src="https://jameson-pi.github.io/threejs-scroll-animation-demo/normal.jpg"
-const spaceI = new Image();
-moonI.src="https://jameson-pi.github.io/threejs-scroll-animation-demo/space.jpg"
+
 // Setup
 
 const scene = new THREE.Scene();
@@ -67,12 +60,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load(spaceI);
+const spaceTexture = new THREE.TextureLoader().load("https://jameson-pi.github.io/threejs-scroll-animation-demo/space.jpg");
 scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load(jeffI);
+const jeffTexture = new THREE.TextureLoader().load("https://jameson-pi.github.io/threejs-scroll-animation-demo/jeff.png");
 
 const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
@@ -81,7 +74,7 @@ scene.add(jeff);
 // Moon
 
 const moonTexture = new THREE.TextureLoader().load("https://jameson-pi.github.io/threejs-scroll-animation-demo/moon.jpg");
-const normalTexture = new THREE.TextureLoader().load(normalI);
+const normalTexture = new THREE.TextureLoader().load("https://jameson-pi.github.io/threejs-scroll-animation-demo/normal.jpg");
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
