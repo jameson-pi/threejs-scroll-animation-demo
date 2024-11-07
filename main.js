@@ -22,7 +22,7 @@ renderer.render(scene, camera);
 // Torus
 const tourusTexture = new THREE.TextureLoader().load("https://jameson-pi.github.io/threejs-scroll-animation-demo/checkerboard.jpg");
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-const material = new THREE.MeshStandardMaterial({ map: tourusTexture});
+const material = new THREE.MeshStandardMaterial({ color: 0x1766e6, wireframe: true});
 const torus = new THREE.Mesh(geometry, material);
 
 scene.add(torus);
