@@ -80,7 +80,7 @@ scene.add(jeff);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load(moonI);
+const moonTexture = new THREE.TextureLoader().load("https://jameson-pi.github.io/threejs-scroll-animation-demo/moon.jpg");
 const normalTexture = new THREE.TextureLoader().load(normalI);
 
 const moon = new THREE.Mesh(
