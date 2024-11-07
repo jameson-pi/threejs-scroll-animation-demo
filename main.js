@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import './space.jpg';
 import "./moon.jpg";
 import "./jeff.png";
-import "./normal.jpg"
+import "./normal.jpg";
 // Setup
 
 const scene = new THREE.Scene();
